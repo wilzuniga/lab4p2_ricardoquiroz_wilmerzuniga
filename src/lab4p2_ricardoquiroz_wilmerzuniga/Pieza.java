@@ -47,6 +47,6 @@ public abstract class Pieza {
         this.rep = rep;
     }
     
-    public abstract boolean Movimiento(String ubiactual, String destino, Object tablero);
+    public abstract boolean Movimiento(String ubiactual, String destino, Object tablero[][]);
     
 }

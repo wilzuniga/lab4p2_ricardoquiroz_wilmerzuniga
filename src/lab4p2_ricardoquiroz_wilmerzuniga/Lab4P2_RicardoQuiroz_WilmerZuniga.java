@@ -30,6 +30,18 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
             
             impremarG(Tablero);
             
+            System.out.println("Ubi actual: ");
+            lea = new Scanner(System.in);
+            String uniactual = lea.nextLine();// Piezas negras
+            System.out.println("");
+            
+            System.out.println("Destinp: ");
+            lea = new Scanner(System.in);
+            String Destinp = lea.nextLine();// Piezas negras
+            System.out.println("");
+            
+            Boolean tgh;
+            //tgh = Peon.Movimiento(uniactual, Destinp, Tablero);
 
         }
 
@@ -44,8 +56,8 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
             for (int j = 0; j < Tablero[i].length; j++) {
                 Tablero[i][j]=" ";
             }
-            System.out.println("");
-            System.out.println("");
+//            System.out.println("");
+//            System.out.println("");
         }
         
         Tablero[0][0]= new Torre(0, 0, 'r');

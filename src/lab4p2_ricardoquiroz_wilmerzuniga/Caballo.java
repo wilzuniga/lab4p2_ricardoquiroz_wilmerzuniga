@@ -17,6 +17,11 @@ public class Caballo extends Pieza{
     public Caballo(int posx, int posy, char rep) {
         super(posx, posy, rep);
     }
+
+    @Override
+    public boolean Movimiento(String ubiactual, String destino, Object[][] tablero) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
