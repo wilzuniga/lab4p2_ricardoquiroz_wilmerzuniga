@@ -117,14 +117,13 @@ public class Peon extends Pieza{
             if(tablero[x1][y1] instanceof Peon) {
                 if (Math.abs(y2-y1) == 1) {
                     if (tablero[x2][y2] == " ") {
-                        tablero[x2][y2] = new Peon(x2, y2, '');
                         if (((Peon)(tablero[x1][y1])).getRep() == 'p') {
                             tablero[x2][y2] = new Peon(x2, y2, 'p');
-                            tablero[x1][y1] = new Peon(x2, y2, 'p');
-
+                            tablero[x1][y1] = " ";                           
                         }
                         else{
                             tablero[x2][y2] = new Peon(x2, y2, 'P');
+                            tablero[x1][y1] = " ";
                         }
                     }
                     else{
