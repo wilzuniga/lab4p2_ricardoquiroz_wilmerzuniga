@@ -9,6 +9,6 @@ package lab4p2_ricardoquiroz_wilmerzuniga;
  *
  * @author rjqer
  */
-public class Alfil {
+public class Alfil extends Pieza{
     
 }
