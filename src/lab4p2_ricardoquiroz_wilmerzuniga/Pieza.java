@@ -10,14 +10,17 @@ package lab4p2_ricardoquiroz_wilmerzuniga;
  * @author rjqer
  */
 public abstract class Pieza {
-    private int posx, posy;
-
+    
+    protected int posx, posy;
+    protected char rep;
+     
     public Pieza() {
     }
 
-    public Pieza(int posx, int posy) {
+    public Pieza(int posx, int posy, char rep) {
         this.posx = posx;
         this.posy = posy;
+        this.rep = rep;
     }
 
     public int getPosx() {
@@ -36,14 +39,14 @@ public abstract class Pieza {
         this.posy = posy;
     }
 
-    @Override
-    public String toString() {
-        return "Pieza{" + "posx=" + posx + ", posy=" + posy + '}';
+    public char getRep() {
+        return rep;
+    }
+
+    public void setRep(char rep) {
+        this.rep = rep;
     }
     
-            
-    //public abstract boolean Movimiento(coor, coormov, tablero);
-    
-    
+    public abstract boolean Movimiento(coor , coormov, tablero);
     
 }

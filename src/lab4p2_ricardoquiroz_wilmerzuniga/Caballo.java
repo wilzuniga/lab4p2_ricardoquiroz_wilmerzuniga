@@ -10,5 +10,14 @@ package lab4p2_ricardoquiroz_wilmerzuniga;
  * @author rjqer
  */
 public class Caballo extends Pieza{
+
+    public Caballo() {
+    }
+
+    public Caballo(int posx, int posy, char rep) {
+        super(posx, posy, rep);
+    }
+    
+    
     
 }

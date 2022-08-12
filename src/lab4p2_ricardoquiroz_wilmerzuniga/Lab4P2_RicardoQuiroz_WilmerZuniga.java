@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Lab4P2_RicardoQuiroz_WilmerZuniga {
 
-<<<<<<< HEAD
     static Scanner lea = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -57,9 +56,6 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
             System.out.println("");
             System.out.println("");
         }
-=======
-    public static void main(String[] args) {
-        
->>>>>>> 4894be234cb5af8309ac815f6b55f769e98ec617
+
     }
 }

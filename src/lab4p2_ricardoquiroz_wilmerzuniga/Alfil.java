@@ -10,5 +10,14 @@ package lab4p2_ricardoquiroz_wilmerzuniga;
  * @author rjqer
  */
 public class Alfil extends Pieza{
+
+    public Alfil() {
+    }
+
+    public Alfil(int posx, int posy, char rep) {
+        super(posx, posy, rep);
+    }
+    
+    
     
 }
