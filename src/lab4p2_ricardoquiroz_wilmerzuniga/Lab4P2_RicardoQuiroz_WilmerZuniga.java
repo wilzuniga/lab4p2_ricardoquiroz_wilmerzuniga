@@ -41,6 +41,23 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
             System.out.println("");
             System.out.println("");
         }
+        
+        Tablero[0][0]= new Torre(0, 0, 'p');
+        Tablero[0][7] = new Torre(0, 7, 'p');
+
+        Tablero[0][1] = new Caballo( 0, 1, 'n');
+        Tablero[0][6] = new Caballo(0, 6, 'n');
+        
+        Tablero[0][2] = new Alfil(0, 2, 'b');
+        Tablero[0][5] = new Alfil(0, 5, 'b');
+        
+        Tablero[0][3] = new Dama(0, 3, 'q');
+
+        Tablero[0][4] = new Rey(0, 4, 'k');
+
+
+
+        
     }
 
     public static void impremarG(Object[][] Tablero) {//IMPRESION + Mar
@@ -49,9 +66,26 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
         System.out.println("       A      B      C      D      E      F      G      H");
         System.out.println("");
         for (int i = 0; i < Tablero.length; i++) {
-            System.out.print(i + 1 + "     ");
+            System.out.print(i  + "     ");
             for (int j = 0; j < Tablero[i].length; j++) {
-                System.out.print("[" +Tablero[i][j] + "]" + "    ");
+                if(Tablero[i][j] instanceof Torre){
+                    System.out.print("[" +((Torre) Tablero[i][j]).getRep()+ "]" + "    ");
+                }else if(Tablero[i][j] instanceof Caballo){
+                    System.out.print("[" + ((Caballo) Tablero[i][j]).getRep() + "]" + "    ");
+
+                }else if(Tablero[i][j] instanceof Alfil){
+                    System.out.print("[" + ((Alfil) Tablero[i][j]).getRep() + "]" + "    ");
+
+                }else if(Tablero[i][j] instanceof Dama){
+                    System.out.print("[" + ((Dama) Tablero[i][j]).getRep() + "]" + "    ");
+
+                }else if(Tablero[i][j] instanceof Rey){
+                    System.out.print("[" + ((Rey) Tablero[i][j]).getRep() + "]" + "    ");
+
+                }else{
+                    System.out.print("[" + Tablero[i][j] + "]" + "    ");
+
+                }
             }
             System.out.println("");
             System.out.println("");
