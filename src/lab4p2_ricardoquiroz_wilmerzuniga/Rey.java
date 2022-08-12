@@ -9,6 +9,6 @@ package lab4p2_ricardoquiroz_wilmerzuniga;
  *
  * @author rjqer
  */
-public class Rey {
+public class Rey extends Pieza{
     
 }
