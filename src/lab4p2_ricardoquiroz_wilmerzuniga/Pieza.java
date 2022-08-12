@@ -47,6 +47,6 @@ public abstract class Pieza {
         this.rep = rep;
     }
     
-    public abstract boolean Movimiento(coor, coormov, tablero);
+    public abstract boolean Movimiento(pieza, posx, posy, posx2, posy2, tablero);
     
 }

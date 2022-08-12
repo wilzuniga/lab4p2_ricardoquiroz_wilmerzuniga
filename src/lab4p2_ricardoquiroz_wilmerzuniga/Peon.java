@@ -18,7 +18,7 @@ public class Peon extends Pieza{
         super(posx, posy, rep);
     }
     
-    public boolean Movimiento(coor, coormov, tablero){
+    public boolean Movimiento(posx, posy, posx2, posy2, tablero){
         boolean mover = false;
         
         
