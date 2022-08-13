@@ -44,7 +44,7 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
             
             //Object tgh = Pieza.Movimiento(uniactual, Destinp, Tablero) ;
             System.out.println(((Pieza)(Tablero[1][0])).Movimiento(uniactual, Destinp, Tablero));
-            Tablero=(((Pieza)(Tablero[1][0])).Mover(uniactual, Destinp, Tablero));
+            //Tablero=(((Pieza)(Tablero[1][0])).Mover(uniactual, Destinp, Tablero));
 
 
         }
