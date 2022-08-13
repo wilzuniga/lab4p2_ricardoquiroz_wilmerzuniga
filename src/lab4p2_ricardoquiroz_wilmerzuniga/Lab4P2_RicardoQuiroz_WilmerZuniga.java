@@ -5,12 +5,14 @@ import java.util.Scanner;
 public class Lab4P2_RicardoQuiroz_WilmerZuniga {
 
     static Scanner lea = new Scanner(System.in);
+    
 
     public static void main(String[] args) {
         boolean ciclo = true;
         Object Tablero[][] = new Object[8][8];
 
         Iniciar(Tablero);
+        
         
         System.out.println("La palabra jaque mate proviene de las palabras persas sha mat, que significan -El rey ha fallecido- ");
 
@@ -40,8 +42,10 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
             String Destinp = lea.nextLine();// Piezas negras
             System.out.println("");
             
-            Boolean tgh;
-            //tgh = Peon.Movimiento(uniactual, Destinp, Tablero);
+            //Object tgh = Pieza.Movimiento(uniactual, Destinp, Tablero) ;
+            System.out.println(((Pieza)(Tablero[1][0])).Movimiento(uniactual, Destinp, Tablero));
+            Tablero=(((Pieza)(Tablero[1][0])).Mover(uniactual, Destinp, Tablero));
+
 
         }
 
