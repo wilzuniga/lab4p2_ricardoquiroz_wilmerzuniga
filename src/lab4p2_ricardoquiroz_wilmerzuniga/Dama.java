@@ -123,13 +123,13 @@ public class Dama extends Pieza {
             if (tablero[x2][y2] == " ") {
                 if ((x2 == x1 || y2 == y1) && Math.abs(y2 - y1) == Math.abs(x2 - x1)) {
                     if (((Dama) (tablero[x1][y1])).getRep() == 'q') {
-                        tablero[x2][y2] = new Torre(x2, y2, 'q');
+                        tablero[x2][y2] = new Dama(x2, y2, 'q');
                         tablero[x1][y1] = " ";
                         coso = true;
                         //System.out.println("opcion 1");
 
                     } else {
-                        tablero[x2][y2] = new Torre(x2, y2, 'Q');
+                        tablero[x2][y2] = new Dama(x2, y2, 'Q');
                         tablero[x1][y1] = " ";
                         coso = true;
                         //System.out.println("opcion 2");
@@ -253,12 +253,12 @@ public class Dama extends Pieza {
             if (tablero[x2][y2] == " ") {
                 if ((x2 == x1 || y2 == y1) && Math.abs(y2 - y1) == Math.abs(x2 - x1)) {
                     if (((Dama) (tablero[x1][y1])).getRep() == 'q') {
-                        tablero[x2][y2] = new Torre(x2, y2, 'q');
+                        tablero[x2][y2] = new Dama(x2, y2, 'q');
                         tablero[x1][y1] = " ";
                         //System.out.println("opcion 1");
 
                     } else {
-                        tablero[x2][y2] = new Torre(x2, y2, 'Q');
+                        tablero[x2][y2] = new Dama(x2, y2, 'Q');
                         tablero[x1][y1] = " ";
                         //System.out.println("opcion 2");
 
