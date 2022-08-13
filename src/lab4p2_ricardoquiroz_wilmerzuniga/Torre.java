@@ -119,17 +119,17 @@ public class Torre extends Pieza {
 
         }
 
-        if (((char) (tablero[x1][y1])) == 'B' || ((char) (tablero[x1][y1])) == 'b') {
+        if (((char) (tablero[x1][y1])) == 'R' || ((char) (tablero[x1][y1])) == 'r') {
             if (tablero[x2][y2] == " ") {
                 if ((x2 == x1 || y2 == y1)) {
-                    if (((Torre) (tablero[x1][y1])).getRep() == 'b') {
-                        tablero[x2][y2] = new Torre(x2, y2, 'b');
+                    if (((Torre) (tablero[x1][y1])).getRep() == 'r') {
+                        tablero[x2][y2] = new Torre(x2, y2, 'r');
                         tablero[x1][y1] = " ";
                         coso = true;
                         //System.out.println("opcion 1");
 
                     } else {
-                        tablero[x2][y2] = new Torre(x2, y2, 'B');
+                        tablero[x2][y2] = new Torre(x2, y2, 'R');
                         tablero[x1][y1] = " ";
                         coso = true;
                         //System.out.println("opcion 2");
@@ -250,16 +250,16 @@ public class Torre extends Pieza {
 
         }
 
-        if (((char) (tablero[x1][y1])) == 'B' || ((char) (tablero[x1][y1])) == 'b') {
+        if (((char) (tablero[x1][y1])) == 'R' || ((char) (tablero[x1][y1])) == 'r') {
             if (tablero[x2][y2] == " ") {
                 if ((x2 == x1 || y2 == y1)) {
-                    if (((Torre) (tablero[x1][y1])).getRep() == 'b') {
-                        tablero[x2][y2] = new Torre(x2, y2, 'b');
+                    if (((Torre) (tablero[x1][y1])).getRep() == 'R') {
+                        tablero[x2][y2] = new Torre(x2, y2, 'r');
                         tablero[x1][y1] = " ";
                         //System.out.println("opcion 1");
 
                     } else {
-                        tablero[x2][y2] = new Torre(x2, y2, 'B');
+                        tablero[x2][y2] = new Torre(x2, y2, 'R');
                         tablero[x1][y1] = " ";
                         //System.out.println("opcion 2");
 
