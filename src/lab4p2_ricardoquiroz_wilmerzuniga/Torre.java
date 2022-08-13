@@ -151,7 +151,6 @@ public class Torre extends Pieza {
     }
 
     public Object[][] mover(String ubiactual, String destino, Object[][] tablero) {
-        boolean coso = false;
         char X1 = ubiactual.charAt(0);
         char Y1 = ubiactual.charAt(1);
         int x1 = 0, y1 = 0;

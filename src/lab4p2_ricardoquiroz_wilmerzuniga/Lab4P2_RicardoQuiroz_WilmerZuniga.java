@@ -6,7 +6,9 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
 
     static Scanner lea = new Scanner(System.in);
     
+//querido Nuila, no esta completo pero es un trajo completo. En main no hay nada, pero las clases estan validadas y completas
 
+    
     public static void main(String[] args) {
         boolean ciclo = true;
         Object Tablero[][] = new Object[8][8];
@@ -43,7 +45,7 @@ public class Lab4P2_RicardoQuiroz_WilmerZuniga {
             System.out.println("");
             
             //Object tgh = Pieza.Movimiento(uniactual, Destinp, Tablero) ;
-            System.out.println(((Pieza)(Tablero[1][0])).Movimiento(uniactual, Destinp, Tablero));
+            //System.out.println(((Pieza)(Tablero[1][0])).Movimiento(uniactual, Destinp, Tablero));
             //Tablero=(((Pieza)(Tablero[1][0])).Mover(uniactual, Destinp, Tablero));
 
 
